@@ -53,10 +53,10 @@ $(document).ready(function() {
     });
 
     $(".countdown")
-        .countdown("2019/06/01", function(event) {
+        .countdown("2019/06/15 19:00", function(event) {
             $(this).html(
                 //event.strftime('<div>%w <span>Weeks</span></div>  <div>%D <span>Days</span></div>  <div>%H<span>Hours</span></div> <div>%M<span>Minutes</span></div> <div>%S<span>Seconds</span></div>')
-                event.strftime('<div>%D <span>Days</span></div>')
+                event.strftime('<div>%w <span>Weeks</span></div>  <div>%D <span>Days</span></div>')
             );
         });
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
      =============================================== */
     $(".cover_slider").owlCarousel({
         loop:true,
-        autoplay:true,
+        autoplay:false,
         smartSpeed:1000,
         autoplayHoverPause:false,
         dots:true,

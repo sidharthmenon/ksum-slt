@@ -1988,6 +1988,7 @@ Cover
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 320px;
 }
 .cover_slider .slider-content-left {
   max-width: 800px;
@@ -2005,7 +2006,7 @@ Cover
 }
 .cover_slider .cover_item .slider_content {
   display: table;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
   height: 100%;
   width: 100%;
   position: relative;
@@ -3165,3 +3166,12 @@ textarea.form-control {
 .accordion_card .card-body {
   font-size: 16px;
 }
+.slider-content-center a{
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cover_slider .cover_item{
+    background-position: -220px center !important;
+  }
+} 
