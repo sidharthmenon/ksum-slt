@@ -68,12 +68,20 @@ $(document).ready(function() {
         autoplay:false,
         smartSpeed:1000,
         autoplayHoverPause:false,
-        dots:true,
+        URLhashListener:true,
+        startPosition: '0',
+        dots:false,
         nav:false,
         items:1,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        dotsContainer: '.cover_dots'
+        dotsContainer: '.cover_dots',
+    });
+
+    $(".cover_dots li").click(function(){
+        location.hash = $(this).attr("data-hash");
+        $(this).parent().children('li').removeClass('active')
+        $(this).addClass("active")
     });
 
     $(".brand_carousel").owlCarousel({
